@@ -33,15 +33,3 @@ class Comportement:
             vitesse_vehicule = 0
 
         return (vitesse_vehicule - v_i) / Tau
-    
-
-
-# In[ ]:
-
-
-from Comportement import Comportement
-
-class Voiture(object):
-    
-    def __init__(self, position, vitesse, delta, temps_total, indice, numero_section):
-
