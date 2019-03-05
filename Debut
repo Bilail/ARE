@@ -1,6 +1,5 @@
 
-# script animation_balle.py
-#(C) Fabrice Sincère
+
 
 from tkinter import *
 import math,random
