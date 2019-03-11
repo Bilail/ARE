@@ -538,7 +538,7 @@ bouton_bleu4 = Spinbox(Mafenetre,from_=-30,to=30,increment=1,textvariable=Valeur
 bouton_bleu4.pack(side = RIGHT,padx=5,pady=5)
 Label(Mafenetre,text="Vitesse bleu").pack(side = RIGHT,padx=5,pady=5)
 
-Bouton1 = Button(Mafenetre, text ='GO',width=10, command = deplace)
+Bouton1 = Button(Mafenetre, text ='GO',width=10, command = deplaceboucle)
 Bouton1.pack(side = LEFT, padx = 5, pady = 5)
 
 Bouton_bleu5 = Button(Mafenetre, text ='Frein bleu',width=10, command = frein)
