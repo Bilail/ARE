@@ -397,3 +397,160 @@ Bouton_bleu3 = Button(Mafenetre, text ='-bleu',width=10, command = moins)
 Bouton_bleu3.pack(padx = 5, pady = 5)
 
 Mafenetre.mainloop() 
+
+
+
+
+-----------------------------------------------
+
+
+
+from tkinter import *
+import math,random
+import time
+
+LARGEUR = 1500
+HAUTEUR = 800
+
+# Création de la fenêtre principale
+Mafenetre = Tk()
+Mafenetre.title("Animation")
+
+#photo = PhotoImage(file="./Téléchargements/route3.png")
+
+
+# Création d'un widget Canvas
+Canevas = Canvas(Mafenetre,height=HAUTEUR,width=LARGEUR,bg='white')
+#Canevas.create_image(0, 0, anchor=NW, image=photo)
+Canevas.pack(padx=5,pady=5)
+
+
+# position initiale au milieu
+X = 200
+Y = 100
+X2 = 10
+
+#vitesse initial
+v_limite = 6
+DX = 5 # 100 pixel/seconde (10m/s ? 36 km/h ?)
+DX2 = 6 # 120 pixel/seconde
+
+#distance de securiter
+dst_secu=50 
+
+#puissance des frein( un chiffre apres la virgule max)
+Power_Frein=1.5
+
+# la forme
+rect = Canevas.create_rectangle(X,Y,X+30,Y+20,width=1,fill='blue')
+rect2 = Canevas.create_rectangle(X2,Y,X2+30,Y+20,width=1,fill='red')
+
+def tourdepiste():
+    global X,Y,DX,Bouton1,X2,DX2,dst_secu,Power_Frein
+    
+    if X > LARGEUR-30:
+        X = 0
+    elif X < 0 :
+        X = LARGEUR-30
+
+    X = X+DX
+    
+    if X2 > LARGEUR-30:
+        X2 = 0
+    elif X2 < 0 :
+        X2 = LARGEUR-30
+
+    X2 = X2+DX2
+    return
+
+
+def distancedesecu():
+    global X,Y,DX,Bouton1,X2,DX2,dst_secu,Power_Frein
+
+     #distance de securite
+    if X - (X2+30) <=dst_secu and X - (X2+30) >= 0 :#distance de securiter(a varie celon vitesse sinon accident)
+        if DX2-Power_Frein >= 0:
+            DX2=DX2-Power_Frein #freinage progressif et 
+        elif DX2-0.1 >=0: # pas de marche arriere
+            DX2=DX2-0.1
+            
+# prise de la vitesse de la voiture de devant ou vts limite
+    elif DX2 < DX: 
+        DX2 = DX
+    return
+
+
+def accident():
+    global X,Y,DX,Bouton1,X2,DX2,dst_secu,Power_Frein
+    
+#accident(rencontre entre deux voiture)
+    if X - (X2+30) <=0 and X - (X2+30) >= -20:#depend de la vitesse pour fonctionner
+        DX=DX2=0
+
+        
+def deplacement():        
+    global X,Y,DX,Bouton1,X2,DX2,dst_secu,Power_Frein
+
+     # affichage
+    Canevas.coords(rect,X,Y,X+30,Y+20)
+    Canevas.coords(rect2,X2,Y,X2+30,Y+20)
+    
+    
+def deplaceboucle():
+    global X,Y,DX,Bouton1,X2,DX2,dst_secu,Power_Frein
+    
+    tourdepiste()
+    distancedesecu()
+    accident()
+    deplacement()
+
+    # mise à jour toutes les 50 ms
+    Mafenetre.after(50,deplace)
+    Bouton1['state'] = 'disabled'
+    return
+
+
+#-------------------fenetre----------------------
+
+def plus():
+    global DX,DX2
+    DX=DX+1
+
+def plus2():
+    global DX2,DX
+    DX2=DX2+2
+    
+def moins():
+    global DX,DX2
+    DX=DX-1
+
+def var():
+    global DX,Valeur,DX2
+    DX = int(Valeur.get())
+    
+def frein():
+    global DX
+    DX=0
+    
+Valeur = StringVar()
+Valeur.set(10.0)
+bouton_bleu4 = Spinbox(Mafenetre,from_=-30,to=30,increment=1,textvariable=Valeur,width=10,command = var)
+bouton_bleu4.pack(side = RIGHT,padx=5,pady=5)
+Label(Mafenetre,text="Vitesse bleu").pack(side = RIGHT,padx=5,pady=5)
+
+Bouton1 = Button(Mafenetre, text ='GO',width=10, command = deplace)
+Bouton1.pack(side = LEFT, padx = 5, pady = 5)
+
+Bouton_bleu5 = Button(Mafenetre, text ='Frein bleu',width=10, command = frein)
+Bouton_bleu5.pack(side = LEFT, padx = 5, pady = 5)
+
+Bouton_rouge1 = Button(Mafenetre, text ='+rouge',width=10, command = plus2)
+Bouton_rouge1.pack(padx = 5, pady = 5)
+
+Bouton_bleu2 = Button(Mafenetre, text ='+bleu',width=10, command = plus)
+Bouton_bleu2.pack(padx = 5, pady = 5)
+
+Bouton_bleu3 = Button(Mafenetre, text ='-bleu',width=10, command = moins)
+Bouton_bleu3.pack(padx = 5, pady = 5)
+
+Mafenetre.mainloop() 
