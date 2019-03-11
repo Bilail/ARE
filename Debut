@@ -505,7 +505,7 @@ def deplaceboucle():
     deplacement()
 
     # mise à jour toutes les 50 ms
-    Mafenetre.after(50,deplace)
+    Mafenetre.after(50,deplaceboucle)
     Bouton1['state'] = 'disabled'
     return
 
