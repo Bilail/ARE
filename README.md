@@ -1,4 +1,4 @@
-# ARE
+# ARE Road project
 echo "# ARE" >> README.md
 git init
 git add README.md
@@ -17,3 +17,5 @@ Exemple de paramètres:
 - Distance de sécurité
 - Temps de réaction
 - ...
+
+echo "# Les accidents"
