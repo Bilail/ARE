@@ -22,6 +22,7 @@ Exemple de paramètres:
 Dans la vrai vie, un accident se produit lorsqu'il y a collision entre deux véhicules, nous avons donc programmé dans la même optique. 
 C'est à dire nous avons codé de sorte que dès qu'il y ait contact entre deux véhicules alors nous avons accident.
 Contact == Accident 
+![image](https://drive.google.com/uc?export=view&id=1Wi-YDbQIGEAdaa1Xn9pBWd0XRrOHtKNv)
 
 # La fonction tour de piste 
 Nous avons décidé de simuler notre route par une droite infini, en effet dès que le véhicule arrive au bout il revient au début et ainsi de suite créant ainsi une boucle infini. Nous localisons donc la voiture en 2 dimensions une X qui nous donne l'anvancé sur une voie et une Y qui nous indique sur quel voie il se trouve
