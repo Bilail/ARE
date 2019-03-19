@@ -34,4 +34,9 @@ C'est à dire nous avons codé de sorte que dès qu'il y ait contact entre deux 
 Contact == Accident 
 ![image](https://drive.google.com/uc?export=view&id=1Wi-YDbQIGEAdaa1Xn9pBWd0XRrOHtKNv)
 
+# La fonction dépassement 
+On parle de dépassement lorsque deux véhicules, qui circulent dans le même sens de circulation, se dépassent sur la voie publique.
+En France, le code de la route indique que les dépassements s’effectuent généralement par la gauche. Il n’est possible de dépasser par la droite que lorsqu’un usager souhaite doubler un véhicule tournant à gauche.
+![image](https://drive.google.com/uc?export=view&id=1PGjsLqsPi82X2FsVznO8ViQuQ_ujeFN_)
+
 
