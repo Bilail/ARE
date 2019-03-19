@@ -25,6 +25,5 @@ Contact == Accident
 
 # La fonction tour de piste 
 Nous avons décidé de simuler notre route par une droite infini, en effet dès que le véhicule arrive au bout il revient au début et ainsi de suite créant ainsi une boucle infini. Nous localisons donc la voiture en 2 dimensions une X qui nous donne l'anvancé sur une voie et une Y qui nous indique sur quel voie il se trouve
-<img /C:\Users\bilai\OneDrive\UPMC sorbonne université\ARE>
-https://1drv.ms/u/s!AnK4P3Nhqtpo8nQBAeEYJILsxj55
+![image](https://drive.google.com/uc?export=view&id=1ht9zwcbYT6JQ1700k_WHLjzA6Jvxz2H4
 
