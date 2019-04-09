@@ -43,5 +43,5 @@ En France, le code de la route indique que les dépassements s’effectuent gén
 
 
 
-![ttystudio GIF](https://1drv.ms/u/s!AnK4P3Nhqtpo9Vj5pWow-6MJFUOj)
+![ttystudio GIF](https://drive.google.com/file/d/1MyeOwYlQ9MWZCAi_EG_zbnwBlXXpJoxA/view)
 
