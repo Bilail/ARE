@@ -58,6 +58,8 @@ Ensuite nous avons créé deux pannes, nous remarquons une chute brutal de la vi
 
 Notre projet a l’état final se nomme “final1.ipynb”  
 
+Our project has the final state is called “final1.ipynb” 
+
 On peut l’ouvrir directement grâce à Jupyter Notebook, on sinon grâce a d’autre éditeur python en copiant le code directement et en le collant dans son éditeur python préféré. 
 
 Il fonctionne en fonction d’un nombre de voiture de départ que l’on choisit, puis de deux pannes que l’on peut créer sur le réseau. Nous avons de plus un compteur de vitesse moyenne avec la couleur indiquant la densité du trafic, avec celui-ci nous avons réussi à obtenir plusieurs graphes intéressants à exploiter. 
