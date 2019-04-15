@@ -48,7 +48,13 @@ En France, le code de la route indique que les dépassements s’effectuent gén
 
 # Simulation
 ![gif](simulation-final.gif)
+
+## Graphe de la vitesse en fonction du nombre de voiture 
 ![image](https://drive.google.com/uc?export=view&id=1eZUprIO77tleROOyjNj1w6v81uvUJ_yi)
+
+## Graphe de la vitesse en fonction du temps et des pannes
+En effet ici nous voyons bien que lorsqu'il n'y a pas d'accident ni de panne la vitesse  moyenne des véhicules est constante, ce qui correspond à la première partie du graphe. 
+Ensuite nous avons créé deux pannes, nous remarquons une chute brutal de la vitesse moyennes.
 ![image](https://drive.google.com/uc?export=view&id=1rqcyAGZN7zyCC2VWxTB91z7fox9NkO-i)
 
 # Team 
