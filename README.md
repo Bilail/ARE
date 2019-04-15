@@ -54,7 +54,7 @@ Ensuite nous avons créé deux pannes, nous remarquons une chute brutal de la vi
 
 ![image](https://drive.google.com/uc?export=view&id=1rqcyAGZN7zyCC2VWxTB91z7fox9NkO-i)
 
-#Conclusion  
+# Conclusion  
 
 Notre projet a l’état final se nomme “final1.ipynb”  
 
@@ -67,5 +67,5 @@ ROUSSARIE Thomas
 
 BEN YAHIA Bilail
 
-Sorbonne Université MIPI 21, Dynamique
+Pour : Sorbonne Université MIPI 21, Dynamique
 
