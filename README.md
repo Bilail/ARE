@@ -12,10 +12,6 @@ Le but de notre projet sera donc de traduire ces diffèrent changement de param�
 
 Pour ce faire nous modéliserons un tronçon d’autoroutes à 3 voies, avec diffèrent types de véhicules, et diffèrent bouton influençant le trafic. 
 
-Aujourd'hui nous sommes constamment ammené à nous déplacer que ce soit en voiture, en transport en commun, ... et les accidents, les vicitmes de la route, les morts, les bouchons sont omniprésent et aucun pays n'y est épargné nous sommes tous touché. Néanmoins les gouvernements ont tenté de modifier des paramètres afin de limité ces accidents nous allons donc essayer de jouer sur ces paramètres pour voir les conséquence, si l'on diminue la vitesse limite, augmente les distances de sécurités, ...
-
-Le but de notre projet est de simuler une portion de route et d'observer son évolution en jouant avec des paramètres.
-
 Exemple de paramètres: 
 - Vitesse limite
 - Distance de sécurité
@@ -58,6 +54,18 @@ Ensuite nous avons créé deux pannes, nous remarquons une chute brutal de la vi
 
 ![image](https://drive.google.com/uc?export=view&id=1rqcyAGZN7zyCC2VWxTB91z7fox9NkO-i)
 
+#Conclusion  
+
+Notre projet a l’état final se nomme “final1.ipynb”  
+
+On peut l’ouvrir directement grâce à Jupyter Notebook, on sinon grâce a d’autre éditeur python en copiant le code directement et en le collant dans son éditeur python préféré. 
+
+Il fonctionne en fonction d’un nombre de voiture de départ que l’on choisit, puis de deux pannes que l’on peut créer sur le réseau. Nous avons de plus un compteur de vitesse moyenne avec la couleur indiquant la densité du trafic, avec celui-ci nous avons réussi à obtenir plusieurs graphes intéressants à exploiter. 
+
 # Team 
-Sorbonne université MIPI 21 🔨🔨🔨
-Dynamique
+ROUSSARIE Thomas
+
+BEN YAHIA Bilail
+
+Sorbonne Université MIPI 21, Dynamique
+
